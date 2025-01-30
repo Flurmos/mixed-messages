@@ -4,9 +4,5 @@ const activity = ['hiking', 'for a hike', 'swimming', 'biking', 'running', 'out'
 const backEnd = ['today', 'tomorrow', 'soon', 'more often', 'regularly', 'more regularly', 'every day', 'every week'];
 // Generate a random index
 const randIndex = arr => Math.floor(Math.random() * arr.length);
-// Get random index for each array
-const frontIdx = randIndex(frontEnd);
-const activityIdx = randIndex(activity);
-const backIdx = randIndex(backEnd);
 // Print the random message
-console.log(frontEnd[frontIdx] + ' go ' + activity[activityIdx] + ' ' + backEnd[backIdx] + '!');
+console.log(frontEnd[randIndex(frontEnd)] + ' go ' + activity[randIndex(activity)] + ' ' + backEnd[randIndex(backEnd)] + '!');
